@@ -2,6 +2,7 @@ import React from 'react';
 import Card from './components/Card';
 import Loader from '../UI/Loader';
 import Error from '../UI/Error';
+import Header from '../UI/Header';
 import './Profile.scss';
 import getParticipant from 'api/getParticipant.api';
 import Citations from './components/Citations';
@@ -36,9 +37,9 @@ class ParticipantProfile extends React.Component {
     let { user, loading, error } = this.state;
     return (
         <div className='user-profile--container'>
+          < Header />
           { loading && <Loader /> }
           { error && <Error error={error} /> }
-          <a href={'/participants'} className='user-profile--nav'>Back to Index</a>
           <div className='user-profile--content-container'>
             <Card user={user} />
             <Citations />

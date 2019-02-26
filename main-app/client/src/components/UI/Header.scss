@@ -1,0 +1,46 @@
+.header--container {
+    align-items: center;
+    border: solid 1px lightgray;
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 1.2rem;
+    padding-bottom: 1.2rem;
+    a {
+      color: gray;
+      text-decoration: none;
+      width: 150px;
+      &:hover {
+        font-weight: bold;
+      }
+    }
+  }
+  
+  .header--search-bar {
+    align-self: center;
+    position: relative;
+  
+    input {
+      font-size: 100%;
+      width: 90%;
+      height: 150%;
+      padding: 0.5rem;
+      padding-right: 0rem;
+
+      &:focus {
+        outline: none;
+      }
+    }
+  
+    button {
+      position: absolute;
+      color: gray;
+      background-color: rgb(226, 226, 226);
+      height: 100%;
+      width: 20%;
+      padding: 0;
+
+      &:focus {
+        outline: none;
+      }
+    }
+  }
